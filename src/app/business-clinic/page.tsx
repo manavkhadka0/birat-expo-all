@@ -19,7 +19,7 @@ export default function Home() {
     const fetchStatistics = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/statistics/`
+          `https://cim.baliyoventures.com/api/business_clinic/issues/statistics/`
         );
         if (!response.ok) throw new Error("Failed to fetch statistics");
         const data = await response.json();

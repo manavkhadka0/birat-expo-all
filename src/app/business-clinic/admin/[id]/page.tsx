@@ -173,7 +173,7 @@ export default function IssueDetailsPage() {
   const fetchIssue = async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/${params.id}/`
+        `https://cim.baliyoventures.com/api/business_clinic/issues/${params.id}/`
       );
       if (!response.ok) throw new Error("Failed to fetch issue");
       const data = await response.json();
@@ -197,7 +197,7 @@ export default function IssueDetailsPage() {
 
         // Also fetch subcategories for the current category
         const subCategoriesResponse = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-subcategories/?category=${data.nature_of_industry_category_detail.id}`
+          `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-subcategories/?category=${data.nature_of_industry_category_detail.id}`
         );
         if (subCategoriesResponse.ok) {
           const subCategoriesData = await subCategoriesResponse.json();
@@ -222,7 +222,7 @@ export default function IssueDetailsPage() {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-categories/`
+          `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-categories/`
         );
         if (!response.ok) throw new Error("Failed to fetch categories");
         const data = await response.json();
@@ -240,7 +240,7 @@ export default function IssueDetailsPage() {
       const fetchSubCategories = async () => {
         try {
           const response = await fetch(
-            `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-subcategories/?category=${industryCategory}`
+            `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-subcategories/?category=${industryCategory}`
           );
           if (!response.ok) throw new Error("Failed to fetch subcategories");
           const data = await response.json();
@@ -270,7 +270,7 @@ export default function IssueDetailsPage() {
       };
 
       const updateResponse = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/${issue.id}/`,
+        `https://cim.baliyoventures.com/api/business_clinic/issues/${issue.id}/`,
         {
           method: "PATCH",
           headers: {
@@ -345,7 +345,7 @@ export default function IssueDetailsPage() {
 
     try {
       const deleteResponse = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/${issue.id}/`,
+        `https://cim.baliyoventures.com/api/business_clinic/issues/${issue.id}/`,
         {
           method: "DELETE",
         }
@@ -357,7 +357,7 @@ export default function IssueDetailsPage() {
         description: "Issue deleted successfully",
       });
 
-      router.push("/admin");
+      router.push("/business-clinic/admin");
     } catch (error) {
       console.error("Error deleting issue:", error);
       toast.error("Failed to delete issue");
@@ -386,7 +386,7 @@ export default function IssueDetailsPage() {
   return (
     <div className="container py-10">
       <Button asChild variant="ghost" className="mb-6">
-        <Link href="/admin">
+        <Link href="/business-clinic/admin">
           <ChevronLeft className="mr-2 h-4 w-4" />
           Back to All Issues
         </Link>

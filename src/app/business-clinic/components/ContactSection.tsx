@@ -27,13 +27,13 @@ export function ContactSection() {
                       href="tel:021-515712"
                       className="text-blue-600 hover:underline block"
                     >
-                      021-515712
+                      +977 021-515712
                     </a>
                     <a
                       href="tel:021-574428"
                       className="text-blue-600 hover:underline block"
                     >
-                      021-574428
+                      +977 021-574426
                     </a>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ export function ContactSection() {
                     href="mailto:biratexpo2024@gmail.com"
                     className="text-blue-600 hover:underline"
                   >
-                    biratexpo2024@gmail.com
+                    cim.biratnagar@gmail.com
                   </a>
                 </div>
               </CardContent>
@@ -65,9 +65,7 @@ export function ContactSection() {
                   </div>
                   <h3 className="font-semibold">Address</h3>
                   <p className="text-gray-600 text-center">
-                    Chamber of Industries Morang
-                    <br />
-                    Biratnagar, Nepal
+                    Sahid Marga Biratnagar - 2, Province No. 1, Nepal
                   </p>
                 </div>
               </CardContent>

@@ -13,7 +13,7 @@ export function Header() {
   return (
     <header className="border-b bg-white sticky top-0 z-50">
       <div className="flex h-16 items-center justify-between px-6">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/business-clinic" className="flex items-center space-x-2">
           <Image
             src="/cim-logo.webp"
             alt="Business Clinic"
@@ -23,7 +23,7 @@ export function Header() {
           />
           <span className="text-2xl font-normal text-gray-200">|</span>
           <Image
-            src="/business-clinic.svg"
+            src="/business-clinic/business-clinic.svg"
             alt="Business Clinic"
             className="h-48 w-48"
             width={500}
@@ -43,7 +43,7 @@ export function Header() {
             isNavOpen ? "block" : "hidden"
           } md:flex`}
         >
-          <Link href="/register-issue">
+          <Link href="/business-clinic/register-issue">
             <Button
               variant="outline"
               size="sm"
@@ -53,7 +53,7 @@ export function Header() {
             </Button>
           </Link>
           <Link
-            href="/track-issue "
+            href="/business-clinic/track-issue"
             className="text-sm font-medium hover:text-primary transition-colors duration-300 ease-in-out"
           >
             Track Issue

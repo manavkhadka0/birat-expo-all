@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { PenLine } from "lucide-react";
 import Container from "@/app/business-clinic/components/Container";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -50,7 +49,10 @@ export function Hero({ totalIssues, openIssues }: HeroProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                <Link href="/register-issue" className="w-full sm:w-auto">
+                <Link
+                  href="/business-clinic/register-issue"
+                  className="w-full sm:w-auto"
+                >
                   <Button
                     size="lg"
                     className="w-full sm:w-auto bg-blue-900 hover:bg-blue-800"
@@ -58,7 +60,10 @@ export function Hero({ totalIssues, openIssues }: HeroProps) {
                     Register New Issue
                   </Button>
                 </Link>
-                <Link href="/track-issue" className="w-full sm:w-auto">
+                <Link
+                  href="/business-clinic/track-issue"
+                  className="w-full sm:w-auto"
+                >
                   <Button
                     variant="outline"
                     size="lg"
@@ -73,40 +78,7 @@ export function Hero({ totalIssues, openIssues }: HeroProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-              >
-                <Link href="#" className="text-gray-400 hover:text-blue-600">
-                  <PenLine className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-blue-600">
-                  <svg
-                    className="h-6 w-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <path
-                      d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"
-                      strokeWidth="2"
-                    />
-                    <path d="M12 6v6l4 2" strokeWidth="2" />
-                  </svg>
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-blue-600">
-                  <svg
-                    className="h-6 w-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <circle cx="12" cy="12" r="10" strokeWidth="2" />
-                    <path d="M2 12h20" strokeWidth="2" />
-                    <path
-                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-              </motion.div>
+              ></motion.div>
             </div>
           </motion.div>
 
@@ -130,7 +102,7 @@ export function Hero({ totalIssues, openIssues }: HeroProps) {
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <Image
-                src="/dash.png"
+                src="/business-clinic/dash.png"
                 alt="Online Registration Illustration"
                 className="w-full h-auto object-contain sm:hidden md:block hidden"
                 width={500}

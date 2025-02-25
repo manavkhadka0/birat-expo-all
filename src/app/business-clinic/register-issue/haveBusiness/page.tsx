@@ -44,7 +44,7 @@ export default function RegisterIssue() {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-categories/`
+          `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-categories/`
         );
         if (!response.ok) throw new Error("Failed to fetch categories");
         const data = await response.json();
@@ -67,7 +67,7 @@ export default function RegisterIssue() {
 
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-subcategories/?category=${selectedCategory}`
+          `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-subcategories/?category=${selectedCategory}`
         );
         if (!response.ok) throw new Error("Failed to fetch subcategories");
         const data = await response.json();
@@ -131,7 +131,7 @@ export default function RegisterIssue() {
       });
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/`,
+        `https://cim.baliyoventures.com/api/business_clinic/issues/`,
         {
           method: "POST",
           body: formData,
@@ -157,7 +157,7 @@ export default function RegisterIssue() {
       form.reset();
       setSelectedCategory(null);
       setSubCategories([]);
-      router.push(`/thank-you?id=${responseData.id}`);
+      router.push(`/business-clinic/thank-you?id=${responseData.id}`);
     } catch (error) {
       console.error("Submission error:", error);
       toast.error("Error", {

@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 
 export const YesNoSelect = React.forwardRef<
   HTMLSelectElement,
   { value: boolean; onChange: (value: boolean) => void }
->(({ value, onChange }) => (
+>(({ value, onChange }, _ref) => (
   <div className="flex space-x-2">
     <div
       onClick={() => onChange(true)}

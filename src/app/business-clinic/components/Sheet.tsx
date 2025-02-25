@@ -27,11 +27,6 @@ const Sheet: React.FC<SheetProps> = ({ isOpen, onClose }) => {
             Register New Issue
           </Button>
         </Link>
-        <Link href="/admin">
-          <Button size="sm" className="mb-2">
-            Admin
-          </Button>
-        </Link>
         <Link href="/track-issue">
           <Button size="sm" className="mb-2">
             Track Issue

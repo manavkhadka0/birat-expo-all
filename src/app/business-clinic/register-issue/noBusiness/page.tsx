@@ -68,7 +68,7 @@ export default function RegisterIssue() {
         });
 
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/`,
+          `https://cim.baliyoventures.com/api/business_clinic/issues/`,
           {
             method: "POST",
             body: formData,

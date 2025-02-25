@@ -32,7 +32,7 @@ export default function TrackIssuePage() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/${issueId}/`
+        `https://cim.baliyoventures.com/api/business_clinic/issues/${issueId}/`
       );
       if (!response.ok) throw new Error("Issue not found");
       const data = await response.json();

@@ -20,7 +20,7 @@ export default function LoginPage() {
     setError("");
 
     if (await login(email, password)) {
-      router.push("/admin");
+      router.push("/business-clinic/admin");
     } else {
       setError("Invalid email or password");
     }

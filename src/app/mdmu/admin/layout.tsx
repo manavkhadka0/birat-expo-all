@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "../context/AuthContext";
-
+import Link from "next/link";
 export default function AdminLayout({
   children,
 }: {
@@ -20,11 +20,11 @@ export default function AdminLayout({
         const isAuth = await checkAuthStatus();
 
         if (!isAuth) {
-          router.push("/login");
+          router.push("/mdmu/login");
         }
       } catch (error) {
         console.log(error);
-        router.push("/login");
+        router.push("/mdmu/login");
       } finally {
         setIsLoading(false);
       }
@@ -49,9 +49,11 @@ export default function AdminLayout({
         <h1 className="text-xl font-bold">Admin Dashboard</h1>
         <div className="flex items-center space-x-4">
           <span>{user?.email}</span>
-          <Button onClick={logout} variant="destructive">
-            Logout
-          </Button>
+          <Link href="/mdmu/login">
+            <Button onClick={logout} variant="destructive">
+              Logout
+            </Button>
+          </Link>
         </div>
       </header>
       {children}

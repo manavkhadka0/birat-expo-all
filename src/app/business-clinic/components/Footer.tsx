@@ -16,7 +16,7 @@ export function Footer() {
                 height={32}
               />
               <Image
-                src="/business-clinic.svg"
+                src="/business-clinic/business-clinic.svg"
                 alt="Business Clinic"
                 width={192}
                 height={192}
@@ -75,8 +75,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t mt-8 pt-8 text-center text-sm text-gray-600">
           <p>
-            © {new Date().getFullYear()} Chamber of Industries Morang. All
-            rights reserved.
+            © {new Date().getFullYear()} Business Clinic. All rights reserved.
           </p>
         </div>
       </div>

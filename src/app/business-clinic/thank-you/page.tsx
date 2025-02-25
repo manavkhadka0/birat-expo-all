@@ -59,14 +59,14 @@ function ThankYouContent() {
           <Button
             variant="default"
             className="gap-2"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/business-clinic")}
           >
             <Home className="h-4 w-4" />
             Return Home
           </Button>
           <Button
             variant="outline"
-            onClick={() => router.push("/register-issue")}
+            onClick={() => router.push("/business-clinic/register-issue")}
           >
             Register Another Issue
           </Button>

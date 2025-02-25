@@ -106,14 +106,14 @@ export function MissionSection() {
                 href="tel:021-515712"
                 className="text-blue-600 hover:underline"
               >
-                021-515712
+                +977 021-515712
               </a>
               <span>,</span>
               <a
                 href="tel:021-574428"
                 className="text-blue-600 hover:underline"
               >
-                021-574428
+                +977 021-574426
               </a>
             </p>
           </div>

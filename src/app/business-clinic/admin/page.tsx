@@ -64,14 +64,14 @@ export default function AdminPage() {
 
   // Fetch categories using SWR
   const { data: categories } = useSWR(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/nature-of-industry-categories/`,
+    `https://cim.baliyoventures.com/api/business_clinic/nature-of-industry-categories/`,
     fetcher
   );
 
   // Fetch issues using SWR
   const { data: issuesData, error: issuesError } = useSWR(
     () => {
-      const url = `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/`;
+      const url = `https://cim.baliyoventures.com/api/business_clinic/issues/`;
       const params = new URLSearchParams();
 
       if (statusFilter && statusFilter !== "all") {
@@ -105,7 +105,7 @@ export default function AdminPage() {
   // Fetch statistics using SWR
   const { data: statisticsData, error: statisticsError } = useSWR(
     () => {
-      const url = `${process.env.NEXT_PUBLIC_API_URL}/api/business_clinic/issues/statistics/`;
+      const url = `https://cim.baliyoventures.com/api/business_clinic/issues/statistics/`;
       const params = new URLSearchParams();
 
       if (statusFilter && statusFilter !== "all") {
@@ -292,7 +292,9 @@ export default function AdminPage() {
                               variant="outline"
                               size="sm"
                               onClick={() => {
-                                router.push(`/admin/${issue.id}`);
+                                router.push(
+                                  `/business-clinic/admin/${issue.id}`
+                                );
                               }}
                             >
                               View Details
