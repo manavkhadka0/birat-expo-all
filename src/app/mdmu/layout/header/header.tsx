@@ -128,7 +128,9 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button className="bg-[#0A1E4B] hover:bg-blue-900" asChild>
-                  <Link href={"/mdmu/apply"}>Apply For Logo</Link>
+                  <Link href={"/mdmu/apply"} onClick={() => setOpen(false)}>
+                    Apply For Logo
+                  </Link>
                 </Button>
               </div>
             </SheetContent>

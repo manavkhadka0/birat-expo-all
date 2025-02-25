@@ -6,25 +6,25 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: "021-515712",
+    details: "021-515712, 021-574426, 021-577646, 021-511449",
     color: "text-blue-600",
   },
   {
     icon: Mail,
     title: "Email",
-    details: "biratexpo2024@gmail.com",
+    details: "cim.biratnagar@gmail.com",
     color: "text-emerald-600",
   },
   {
     icon: MapPin,
     title: "Location",
-    details: "Chamber of Industries Morang Biratnagar, Nepal",
+    details: "Sahid Marga Biratnagar - 2, Province No. 1, Nepal",
     color: "text-red-600",
   },
   {
     icon: Clock,
-    title: "Office Hours",
-    details: "Mon - Fri: 9:00 AM - 5:00 PM",
+    title: "Website",
+    details: "www.cim.org.np",
     color: "text-purple-600",
   },
 ];
@@ -70,7 +70,9 @@ export const Contact = () => {
                 <h3 className="font-semibold text-gray-800 mb-2">
                   {info.title}
                 </h3>
-                <p className="text-gray-600 text-sm truncate">{info.details}</p>
+                <p className="text-gray-600 text-sm break-words">
+                  {info.details}
+                </p>
               </div>
             ))}
           </div>

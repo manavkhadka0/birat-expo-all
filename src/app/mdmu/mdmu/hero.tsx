@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
         <div className="relative flex justify-center items-center">
           <Image
-            src="/logo.png"
+            src="/mdmu/logo.png"
             alt="MDMU Logo"
             width={400}
             height={400}

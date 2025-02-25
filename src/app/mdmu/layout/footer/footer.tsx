@@ -17,7 +17,7 @@ export function Footer() {
                 height={80}
               />
               <Image
-                src="/logo.png"
+                src="/mdmu/logo.png"
                 alt="MDMU Logo"
                 className="rounded-full bg-white p-[1px]"
                 width={80}

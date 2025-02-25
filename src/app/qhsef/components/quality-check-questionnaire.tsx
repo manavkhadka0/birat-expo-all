@@ -248,7 +248,7 @@ const QualityCheckQuestionnaire = () => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">← Back to home</BreadcrumbLink>
+              <BreadcrumbLink href="/qhsef">← Back to home</BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

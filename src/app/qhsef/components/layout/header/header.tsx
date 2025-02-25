@@ -108,12 +108,9 @@ const Header = () => {
                 ))}
                 <Button
                   className="bg-white text-[#0A1E4B] hover:bg-gray-200 mx-4"
-                  onClick={() => {
-                    scrollToSection("/qhsef/qhsef");
-                    setOpen(false);
-                  }}
+                  asChild
                 >
-                  Self Assessment
+                  <Link href="/qhsef/qhsef">Self Assessment</Link>
                 </Button>
               </div>
             </SheetContent>
