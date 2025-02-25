@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
         <div className="relative md:mx-auto  justify-center items-center mt-8 md:mt-0 md:block hidden">
           <Image
-            src="/logo.png"
+            src="/qhsef/logo.png"
             alt="MDMU Logo"
             width={350}
             height={350}

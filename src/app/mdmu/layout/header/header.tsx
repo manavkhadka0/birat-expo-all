@@ -61,7 +61,12 @@ const Header = () => {
         <Link href="/mdmu">
           <div className="flex items-center gap-4">
             <Image src="/cim-logo.webp" alt="CIM Logo" width={60} height={60} />
-            <Image src="/logo.png" alt="MDMU Logo" width={75} height={75} />
+            <Image
+              src="/mdmu/logo.png"
+              alt="MDMU Logo"
+              width={75}
+              height={75}
+            />
           </div>
         </Link>
 

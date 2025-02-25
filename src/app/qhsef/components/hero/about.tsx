@@ -29,7 +29,7 @@ const About = () => {
           <div className="md:w-1/2">
             <div className=" w-full h-full">
               <Image
-                src="/image.png" // Add a relevant campaign image
+                src="/qhsef/image.png" // Add a relevant campaign image
                 alt="Mero Desh Merai Utpadan Campaign"
                 width={500}
                 height={500}

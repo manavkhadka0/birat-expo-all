@@ -125,7 +125,7 @@ export function MDMUForm() {
 
         // Reset form and redirect to thank you page
         form.reset();
-        router.push(`/thank-you?${searchParams.toString()}`);
+        router.push(`/mdmu/thank-you?${searchParams.toString()}`);
       }
     } catch (error) {
       if (axios.isAxiosError(error)) {
