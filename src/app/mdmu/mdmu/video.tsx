@@ -12,9 +12,9 @@ export const Video = () => {
             <video
               className="w-full h-full rounded-lg shadow-lg"
               controls
-              poster="/video-thumbnail.png" // Add a thumbnail image if you have one
+              poster="/mdmu/video-thumbnail.png" // Add a thumbnail image if you have one
             >
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/mdmu/video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
