@@ -9,10 +9,10 @@ import { useRouter, usePathname } from "next/navigation";
 import { ResponsiveContainer } from "@/app/b2b/components/sections/common/responsive-container";
 
 const navItems = [
-  { label: "B2B Events", href: "/events" },
-  { label: "Wish & Offer", href: "/wishOffer" },
-  { label: "BDS Services", href: "/bdsService" },
-  { label: "Contact", href: "/contacts" },
+  { label: "B2B Events", href: "/b2b/events" },
+  { label: "Wish & Offer", href: "/b2b/wishOffer" },
+  { label: "BDS Services", href: "/b2b/bdsService" },
+  { label: "Contact", href: "/b2b/contacts" },
 ];
 
 export function DefaultNav() {
@@ -107,7 +107,7 @@ export function DefaultNav() {
                       asChild
                       className="flex items-center gap-2 text-blue-800 border-blue-800"
                     >
-                      <Link href="/wishOffer/wishes/create-wish">
+                      <Link href="/b2b/wishOffer/wishes/create-wish">
                         <PlusCircle className="w-4 h-4" />
                         Make a Wish
                       </Link>
@@ -116,7 +116,7 @@ export function DefaultNav() {
                       asChild
                       className="flex items-center gap-2 bg-blue-800"
                     >
-                      <Link href="/wishOffer/offer/create-offer">
+                      <Link href="/b2b/wishOffer/offer/create-offer">
                         <PlusCircle className="w-4 h-4" />
                         Make an Offer
                       </Link>

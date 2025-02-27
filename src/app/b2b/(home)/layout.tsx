@@ -1,5 +1,5 @@
-import { Footer } from "@/app/business-clinic/components/Footer";
-import { DefaultNav } from "../components/sections/layout/navigation/default-nav";
+import { Footer } from "@/app/b2b/components/sections/layout/footer/footer";
+import { DefaultNav } from "@/app/b2b/components/sections/layout/navigation/default-nav";
 
 export default function WishOfferLayout({
   children,

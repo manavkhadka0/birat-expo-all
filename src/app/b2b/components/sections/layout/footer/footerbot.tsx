@@ -36,22 +36,17 @@ const Footerbot = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="hover:text-blue-500">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-blue-500">
+                  <Link href="/b2b/bdsService" className="hover:text-blue-500">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-blue-500">
+                  <Link href="/b2b/events" className="hover:text-blue-500">
                     Events
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-blue-500">
+                  <Link href="/b2b/contacts" className="hover:text-blue-500">
                     Contact
                   </Link>
                 </li>
@@ -143,38 +138,6 @@ const Footerbot = () => {
           <p className="text-gray-500 text-sm">
             © 2025 B2B Birat Bazaar. All rights reserved.
           </p>
-
-          {/* Right - Social Icons */}
-          <div className="flex space-x-6">
-            <Link
-              href="#"
-              className="text-gray-700 hover:text-blue-500 transition"
-              aria-label="Facebook"
-            >
-              <FacebookIcon size={24} />
-            </Link>
-            <Link
-              href="#"
-              className="text-gray-700 hover:text-blue-500 transition"
-              aria-label="LinkedIn"
-            >
-              <LinkedinIcon size={24} />
-            </Link>
-            <Link
-              href="#"
-              className="text-gray-700 hover:text-blue-500 transition"
-              aria-label="Twitter"
-            >
-              <TwitterIcon size={24} />
-            </Link>
-            <Link
-              href="#"
-              className="text-gray-700 hover:text-blue-500 transition"
-              aria-label="Instagram"
-            >
-              <InstagramIcon size={24} />
-            </Link>
-          </div>
         </div>
       </ResponsiveContainer>
     </footer>

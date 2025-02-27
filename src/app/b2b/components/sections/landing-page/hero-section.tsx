@@ -51,7 +51,7 @@ export default function HeroSection() {
 
             {/* Improved CTA section */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-              <Link href="/events">
+              <Link href="/b2b/events">
                 <motion.button
                   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-full shadow-lg hover:shadow-blue-200/50 transition-all duration-300 w-full sm:w-auto"
                   whileHover={{
@@ -63,7 +63,7 @@ export default function HeroSection() {
                   Explore Events
                 </motion.button>
               </Link>
-              <Link href="/contact">
+              <Link href="/b2b/contacts">
                 <motion.button
                   className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-md hover:shadow-lg border border-blue-100 transition-all duration-300 w-full sm:w-auto"
                   whileHover={{ scale: 1.02 }}
