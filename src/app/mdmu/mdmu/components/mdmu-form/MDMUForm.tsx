@@ -72,7 +72,6 @@ export function MDMUForm() {
       stepValidationSchemas[currentStep as keyof typeof stepValidationSchemas];
     const currentStepFields = Object.keys(currentStepSchema.shape);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const hasErrors = await form.trigger(currentStepFields as any);
     if (!hasErrors) return;
 

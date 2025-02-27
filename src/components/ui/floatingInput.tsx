@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
 

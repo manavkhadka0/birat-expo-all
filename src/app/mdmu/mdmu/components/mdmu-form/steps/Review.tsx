@@ -13,7 +13,6 @@ type ReviewSection = {
   data: Array<{
     label: string;
     value: string | number | boolean | undefined;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     transform?: (value: any) => string;
   }>;
 };
