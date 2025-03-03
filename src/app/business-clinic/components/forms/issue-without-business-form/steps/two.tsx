@@ -18,6 +18,7 @@ export const ReviewStep = ({
             label="Description"
             value={formData.description}
             customClass="description-box" // Add custom class to handle overflow/scroll
+            isHtml={true} // Render description as HTML
           />
           <ReviewItem
             label="Attached File"

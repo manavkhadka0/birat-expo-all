@@ -1,18 +1,18 @@
 export type NatureOfIndustryCategory = {
   id: number;
   name: string;
-}
+};
 
 export type NatureOfIndustrySubCategory = {
   id: number;
   name: string;
   category: NatureOfIndustryCategory;
-}
+};
 
 export interface IssueAction {
   id: number;
   issue: number;
-  action_type: 'status_change' | 'comment' | 'assignment';
+  action_type: "status_change" | "comment" | "assignment";
   old_status?: string;
   new_status?: string;
   comment?: string;
@@ -24,6 +24,8 @@ export interface IssueAction {
 export interface Issue {
   id: number;
   title: string;
+  nature_of_industry_category_detail: NatureOfIndustryCategory | null;
+  nature_of_industry_sub_category_detail: NatureOfIndustrySubCategory | null;
   description: string;
   name_of_company: string;
   contact_name: string;
@@ -38,7 +40,10 @@ export interface Issue {
   address_province: string;
   address_ward: string;
   address_street: string;
-  implementation_level: "Policy Level" | "Implementation Level" | "Capacity Scale Up";
+  implementation_level:
+    | "Policy Level"
+    | "Implementation Level"
+    | "Capacity Scale Up";
   share_contact_details: boolean;
   forward_to_authority: boolean;
   industry_specific_or_common_issue: string;
@@ -50,7 +55,7 @@ export interface Issue {
   member_of_CIM: boolean;
   nature_of_industry_category: NatureOfIndustryCategory | null;
   nature_of_industry_sub_category: NatureOfIndustrySubCategory | null;
-} 
+}
 
 export interface IndustryCategory {
   id: number;

@@ -34,7 +34,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/register-issue"
+                  href="/business-clinic/register-issue"
                   className="text-gray-600 hover:text-blue-900"
                 >
                   Register Issue
@@ -42,7 +42,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/track-issue"
+                  href="/business-clinic/track-issue"
                   className="text-gray-600 hover:text-blue-900"
                 >
                   Track Issue

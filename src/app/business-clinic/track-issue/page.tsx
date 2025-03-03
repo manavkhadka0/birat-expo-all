@@ -97,9 +97,11 @@ export default function TrackIssuePage() {
               {/* Description */}
               <div className="space-y-2 bg-muted/50 p-4 rounded-lg">
                 <h3 className="font-semibold">Description</h3>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  {issue.description}
-                </p>
+
+                <p
+                  className="text-sm text-muted-foreground whitespace-pre-wrap"
+                  dangerouslySetInnerHTML={{ __html: issue.description }}
+                />
               </div>
 
               <div className="grid gap-6">
@@ -121,11 +123,13 @@ export default function TrackIssuePage() {
                       />
                       <InfoItem
                         label="Industry Category"
-                        value={issue.nature_of_industry_category?.name}
+                        value={issue.nature_of_industry_category_detail?.name}
                       />
                       <InfoItem
                         label="Industry Sub-Category"
-                        value={issue.nature_of_industry_sub_category?.name}
+                        value={
+                          issue.nature_of_industry_sub_category_detail?.name
+                        }
                       />
                       <InfoItem
                         label="Implementation Level"

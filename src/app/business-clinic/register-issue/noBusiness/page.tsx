@@ -91,6 +91,8 @@ export default function RegisterIssue() {
         toast.success("Success!", {
           description: "Your issue has been successfully registered.",
         });
+        setIsSubmitting(false);
+
         router.push(`/thank-you?id=${responseData.id}`);
       } catch (error) {
         console.error("Submission error:", error);
@@ -98,7 +100,6 @@ export default function RegisterIssue() {
           description:
             error instanceof Error ? error.message : "Failed to submit issue",
         });
-      } finally {
         setIsSubmitting(false);
       }
     },

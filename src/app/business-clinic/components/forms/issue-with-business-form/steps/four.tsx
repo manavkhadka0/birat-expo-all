@@ -14,9 +14,10 @@ export const ReviewStep = ({
         <ReviewSection title="Issue Details">
           <ReviewItem label="Title" value={formData.title} />
           <ReviewItem
-            label="Description"
+            label="Descriptsion"
             value={formData.description}
             customClass="description-box" // Add custom class for styling
+            isHtml={true} // Render description as HTML
           />
           <ReviewItem
             label="Attached File"
