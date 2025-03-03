@@ -93,7 +93,7 @@ export default function RegisterIssue() {
         });
         setIsSubmitting(false);
 
-        router.push(`/thank-you?id=${responseData.id}`);
+        router.push(`/business-clinic/thank-you?id=${responseData.id}`);
       } catch (error) {
         console.error("Submission error:", error);
         toast.error("Error", {
