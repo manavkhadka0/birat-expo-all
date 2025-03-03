@@ -18,6 +18,7 @@ const navigationItems = [
   { href: "/qhsef/#objectives", label: "Objectives" },
   { href: "/qhsef/#advantages", label: "Advantages" },
   { href: "/qhsef/#contact", label: "Contact" },
+  { href: "/", label: "All Platforms" },
 ];
 
 const Header = () => {

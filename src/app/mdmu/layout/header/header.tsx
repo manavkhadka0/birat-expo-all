@@ -24,6 +24,7 @@ const navigationItems = [
   { href: "/mdmu/#objectives", label: "Objectives" },
   { href: "/mdmu/#advantages", label: "Advantages" },
   { href: "/mdmu/#contact", label: "Contact" },
+  { href: "/", label: "All Platforms" },
 ];
 
 const Header = () => {

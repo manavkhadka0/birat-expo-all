@@ -43,6 +43,13 @@ export function Header() {
             isNavOpen ? "block" : "hidden"
           } md:flex`}
         >
+          {/* All Platforms */}
+          <Link
+            href="/"
+            className="text-sm font-medium hover:text-primary transition-colors duration-300 ease-in-out"
+          >
+            All Platforms
+          </Link>
           <Link href="/business-clinic/register-issue">
             <Button
               variant="outline"
